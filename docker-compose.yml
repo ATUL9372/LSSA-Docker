@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  lssa:
+    image: atuly9372/lynis-report:latest
+    container_name: lssa_atul
+    volumes:
+      - ./hosts:/atul/lynis_ansible/hosts
+      - ./lynis_reports:/atul/lynis_ansible/reports
+
+    network_mode: host
+    command: /bin/bash -c "ansible-playbook -i /atul/lynis_ansible/hosts /atul/lynis_ansible/lynis_automation.yml"
+    restart: always
