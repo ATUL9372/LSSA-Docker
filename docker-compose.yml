@@ -1,4 +1,5 @@
-version: '3.8'
+# Author: Atul Yadav
+version: '3'
 services:
   lssa:
     image: atuly9372/lynis-report:latest
