@@ -22,8 +22,8 @@ LSSA (Lynis Server Security Auditing) is a Docker-based solution that automates 
 ## Installation
 ### 1. Clone the Repository
 ```bash
- git clone https://github.com/yourusername/lssa.git
- cd lssa
+ git clone https://github.com/ATUL9372/LSSA-Docker.git
+ cd LSSA-Docker
 ```
 
 ### 2. Update Inventory (Hosts File)
