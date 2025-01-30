@@ -31,14 +31,16 @@ Modify `hosts` file to add your remote server IPs and authentication details.
 
 ```ini
 [test]
-# Enter your server ip's
-192.168.1.10
-192.168.1.11
+# Enter all remote server ip's
+192.16X.XX.XX
 
 [test:vars]
+
 ansible_connection=ssh
 ansible_ssh_user=USERNAME
+ansible_become_password=PASSWORD
 ansible_ssh_pass=PASSWORD
+#ansible_ssh_common_args='-o IdentitiesOnly=yes'
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 ```
 
