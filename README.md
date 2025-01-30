@@ -20,13 +20,18 @@ LSSA (Lynis Server Security Auditing) is a Docker-based solution that automates 
 6. These reports are **bind-mounted** to the host machine for easy access.
 
 ## Installation
-### 1. Clone the Repository
+### 1. Install Docker
+*[Docker Installation](https://docs.docker.com/engine/install/) -
+This section describes how to install Docker Engine on Linux, also known as Docker CE. Docker Engine is also available for Windows, macOS, and Linux, through Docker Desktop. For instructions on how to install Docker Desktop, see: Overview of Docker Desktop.
+
+
+### 2. Clone the Repository
 ```bash
  git clone https://github.com/ATUL9372/LSSA-Docker.git
  cd LSSA-Docker
 ```
 
-### 2. Update Inventory (Hosts File)
+### 3. Update Inventory (Hosts File)
 Modify `hosts` file to add your remote server IPs and authentication details.
 
 ```ini
@@ -44,7 +49,7 @@ ansible_ssh_pass=PASSWORD
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 ```
 
-### 3. Run LSSA Using Docker Compose
+### 4. Run LSSA Using Docker Compose
 ```bash
 docker-compose up -d
 ```
@@ -54,7 +59,7 @@ This will:
 - Run the **Lynis audit** on remote machines.
 - Store reports in `lynis_reports/` on your host machine.
 
-### 4. Access the Reports with sudo permission
+### 5. Access the Reports with sudo permission
 Once the audit is completed, reports will be available in `lynis_reports/`.
 ```bash
 ls -l lynis_reports/
