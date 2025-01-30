@@ -21,7 +21,7 @@ LSSA (Lynis Server Security Auditing) is a Docker-based solution that automates 
 
 ## Installation
 ### 1. Install Docker
-*[Docker Installation](https://docs.docker.com/engine/install/) -
+* [Docker Installation](https://docs.docker.com/engine/install/) -
 This section describes how to install Docker Engine on Linux, also known as Docker CE. Docker Engine is also available for Windows, macOS, and Linux, through Docker Desktop. For instructions on how to install Docker Desktop, see: Overview of Docker Desktop.
 
 
